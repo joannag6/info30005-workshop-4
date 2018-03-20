@@ -1,0 +1,8 @@
+<h1> All our users :) </h1>
+<% for (let i=0; i<users.length; i++) {%>
+  <div>Name: <%=users[i].firstName + ' ' + users[i].lastName%></div>
+  <div>Email: <%=users[i].email%></div>
+  <div>Phone Number: <%=users[i].phone%></div>
+  <div>Company: <%=users[i].company%></div>
+  </br>
+<% } %>
