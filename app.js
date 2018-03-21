@@ -6,7 +6,7 @@ app.set('view engine', 'ejs');
 
 app.use(router);
 
-/* Starts the server */
-app.listen(3000, function() {
-  console.log('Express serving at port 3000');
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, function(){
+  console.log('Express serving at port '+PORT.toString());
 });
